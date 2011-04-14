@@ -5,8 +5,8 @@
  
  my $ssh2 = Net::SSH2->new();
  
-$ssh2->connect('192.168.3.28') or die "Unable to connect Host $@ \n";
-$ssh2->auth_password('hien','123123') or die "Unable to login $@ \n";
+$ssh2->connect('testhost.here.local') or die "Unable to connect Host $@ \n";
+$ssh2->auth_password('typeuserhere','passwordhere') or die "Unable to login $@ \n";
 
 my $chan=$ssh2->channel();
    $chan->shell();
