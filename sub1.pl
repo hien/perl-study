@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+#Author: Mr.Hien
+#Desc: Subroutine basic!
 sub division {
 	$_[0] / $_[1];
 }
